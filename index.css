@@ -1,0 +1,184 @@
+body{
+    background-color: #FEFAE0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+#welcome{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 4px;
+}
+#image{
+    padding-top: 5px;
+    text-align: center;
+}
+.ul{
+    padding: 0;
+    text-align: center;
+}
+.menu{
+    text-align: center;
+    /* height: 50px; */
+    width: 55vw; /* jak chcę żeby menu było po całości to wpisuję"auto" */
+    /* width: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0%;
+    background-color: #D4A373;
+    border-radius: 10px;
+    /* opacity: 0.5; */
+}
+.menu > li {
+    padding-inline-start: 0%;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    display:inline-block;
+    /* margin: 10px; */
+    padding: 10px;
+    border-radius: 13px;
+    background-color:  #d4a373;
+    background-color:  #D4A373;
+    list-style-type: none;
+    opacity: 1;
+}
+.menu > li:hover{
+    background-color:  #ffeeb8;
+    opacity: 50%;
+}
+.menu > li a{
+    text-decoration: none;
+    color: black;
+}
+.onepage{
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    margin-left: auto;/*  */
+    margin-right: auto;
+    width: 1000px;
+    text-align: justify;
+    background-color: #FEFAE0;
+}
+.dogsdes{
+    /* border: solid; */
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 1000px;
+}
+.dogsimg img{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    border-radius: 10%;
+}
+.dogsdes img:hover{
+    transform: scale(1.1);
+}
+.dogstxt{
+    height: 150px;
+    width: 750px;
+    padding: 18px;
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    /* background-color: blue; */
+}
+#kontakt{
+    text-align: center;
+}
+.footer{
+    text-align-last: center;
+}
+.socmedia{
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.socimg{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    text-align-last: center;
+}
+.socimg img:hover{
+    transform: scale(1.1);
+}
+.container{
+    width: 1000px;
+    height: 1000px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.newsletter{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: justify;
+    height: 30px;;
+    text-align: center;
+}
+#email{
+    width: 350px;
+    height: 30px;
+}
+#button{
+    width: 100px;
+    height: 35px;
+    text-align: justify;
+    /* background-color: blue; */
+}
+.dogsdes{
+    /* border: solid; */
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 1000px;
+}
+.dogsimg img{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    border-radius: 10%;
+}
+.dogsdes img:hover{
+    transform: scale(1.1);
+}
+.dogstxt{
+    height: 150px;
+    width: 750px;
+    padding: 18px;
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    /* background-color: blue; */
+}
+#kontakt{
+    text-align: center;
+}
+.footer{
+    text-align-last: center;
+}
+.socmedia{
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.socimg{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    text-align-last: center;
+}
