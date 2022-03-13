@@ -1,184 +1,195 @@
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: #FEFAE0;
+    background-color: #CDB699;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
-#welcome{
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    padding: 4px;
-}
-#image{
-    padding-top: 5px;
-    text-align: center;
-}
-.ul{
-    padding: 0;
-    text-align: center;
-}
-.menu{
-    text-align: center;
-    /* height: 50px; */
-    width: 55vw; /* jak chcę żeby menu było po całości to wpisuję"auto" */
-    /* width: auto; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0%;
-    background-color: #D4A373;
-    border-radius: 10px;
-    /* opacity: 0.5; */
-}
-.menu > li {
-    padding-inline-start: 0%;
-    font-size: 18px;
-    color: black;
-    text-transform: uppercase;
-    display:inline-block;
-    /* margin: 10px; */
-    padding: 10px;
-    border-radius: 13px;
-    background-color:  #d4a373;
-    background-color:  #D4A373;
-    list-style-type: none;
-    opacity: 1;
-}
-.menu > li:hover{
-    background-color:  #ffeeb8;
-    opacity: 50%;
-}
-.menu > li a{
-    text-decoration: none;
-    color: black;
-}
-.onepage{
-    margin-top: 30px;
-    margin-bottom: 45px;
-    font-size: 18px;
-    margin-left: auto;/*  */
-    margin-right: auto;
-    width: 1000px;
-    text-align: justify;
-    background-color: #FEFAE0;
-}
-.dogsdes{
-    /* border: solid; */
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    width: 1000px;
-}
-.dogsimg img{
-    width: 200px;
-    height: 150px;
-    display: inline-block;
+section{
+    width: 100vw;
+    height: 100vh;
     float: left;
-    border-radius: 10%;
+    background-color: CDB699;
 }
-.dogsdes img:hover{
-    transform: scale(1.1);
-}
-.dogstxt{
-    height: 150px;
-    width: 750px;
-    padding: 18px;
-    font-size: 20px;
-    text-align: justify;
-    display: inline-block;
-    /* background-color: blue; */
-}
-#kontakt{
-    text-align: center;
-}
-.footer{
-    text-align-last: center;
-}
-.socmedia{
-    display: inline-block;
-    margin-left:auto;
-    margin-right:auto;
-}
-.socimg{
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    float: left;
-    text-align-last: center;
-}
-.socimg img:hover{
-    transform: scale(1.1);
-}
-.container{
-    width: 1000px;
-    height: 1000px;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    text-align: center;
 
+
+
+
+        .menu{
+            text-align: center;
+            width:100vw;
+            height: auto;
+            background-color: #b4b08a;
+            display: flex;
+            position: fixed;
+            opacity: 1;
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+        .menu > li {
+            padding-inline-start: 0%;
+            font-size: 12px;
+            color: black;
+            text-transform: uppercase;
+            background-color:  #b4b08a;
+            list-style-type: none;
+            opacity: 1;
+            display:inline-block;
+            padding: 12px;
+        }
+        .menu > li:hover{
+            background-color:  #b4b08a;
+            opacity: 50%;
+            transform: scale(1.1);
+        }
+        .menu > li a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+
+            p1{
+                font-size: 1em;
+            }
+            #main{
+                display: flex;
+                align-items:center;
+                justify-content: center;
+            }
+            #opis{
+                width: 50vw;
+                text-align: center;
+            }
+
+
+
+    #us{
+      /* text-align: center; */
+      background-color: yellowgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #us1{
+    }
+
+
+
+                #ourdogs{
+                    background-color: aqua;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #ourdog1{
+                    /* flex-wrap: wrap; */
+                }
+                .dogsdes{
+                    padding: 0px;
+                    margin-left: 25vw;
+                    height: 150px;
+                }
+                .dogsimg img{
+                    width: 10vw;
+                    height: 15vh;
+                    display: inline-block;
+                    float: left;
+                    border-radius: 10%;
+
+                }
+                .dogsdes img:hover{
+                    transform: scale(1.1);
+                }
+
+                .dogstxt{
+                    height: 150px;
+                    width: 750px;
+                    padding: 18px;
+                    font-size: 20px;
+                    text-align: justify;
+                    display: inline-block;
+                }
+
+
+#support{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.newsletter{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    text-align: justify;
-    height: 30px;;
+#support1{
     text-align: center;
+    max-width: 45vw;
+}
+
+#newsletter{
+text-align: center;
+background-color: cyan;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#newsletter1{
 }
 #email{
     width: 350px;
     height: 30px;
+    border: solid;
 }
 #button{
-    width: 100px;
+    width: 90px;
     height: 35px;
-    text-align: justify;
-    /* background-color: blue; */
-}
-.dogsdes{
-    /* border: solid; */
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    width: 1000px;
-}
-.dogsimg img{
-    width: 200px;
-    height: 150px;
-    display: inline-block;
-    float: left;
-    border-radius: 10%;
-}
-.dogsdes img:hover{
-    transform: scale(1.1);
-}
-.dogstxt{
-    height: 150px;
-    width: 750px;
-    padding: 18px;
-    font-size: 20px;
-    text-align: justify;
-    display: inline-block;
-    /* background-color: blue; */
-}
-#kontakt{
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: solid;
 }
-.footer{
-    text-align-last: center;
-}
-.socmedia{
-    display: inline-block;
-    margin-left:auto;
-    margin-right:auto;
-}
-.socimg{
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    float: left;
-    text-align-last: center;
-}
+
+
+
+    #contact{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #kontakt{
+        text-align: center;
+
+    }
+    .socmedia{
+        display: inline-block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .socimg{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        float: left;
+        text-align-last: center;
+        animation-name: appear;
+        animation-fill-mode: both;
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+    .socimg img:hover{
+        transform: scale(1.1);
+    }
