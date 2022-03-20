@@ -6,6 +6,14 @@
         opacity: 1;
     }
 }
+@keyframes goout {
+    from{
+        transition: 0px;
+    }
+    to {
+        transition: 220px;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,15 +25,15 @@ html{
 body{
     background-color: #CDB699;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    float: left;
-    background-color: CDB699;
+    /* float: left; */
+    /* background-color: #CDB699; */
+    /* border-bottom: solid; */
 }
-
 
 
 
@@ -33,11 +41,12 @@ section{
             text-align: center;
             width:100vw;
             height: auto;
-            background-color: #b4b08a;
+            opacity: 1;
             display: flex;
             position: fixed;
             opacity: 1;
             justify-content: center;
+            visibility: visible;
             /* align-items: center; */
 
         }
@@ -54,7 +63,7 @@ section{
         }
         .menu > li:hover{
             background-color:  #b4b08a;
-            opacity: 50%;
+            opacity: 0,9;
             transform: scale(1.1);
         }
         .menu > li a{
@@ -63,109 +72,116 @@ section{
         }
 
 
-
-
-
-            p1{
-                font-size: 1em;
-            }
             #main{
                 display: flex;
                 align-items:center;
                 justify-content: center;
             }
-            #opis{
+            .opis{
                 width: 50vw;
-                text-align: center;
+                text-align: justify;
+                animation-name: appear;
+                animation-duration: 2s;
+                animation-delay: 0.5s;
+                animation-fill-mode: both;
+            }
+            .opis::first-letter{
+                font-size: 1.3em;
             }
 
 
-
     #us{
-      /* text-align: center; */
-      background-color: yellowgreen;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    #us1{
+    #opis1{
+        width: 50vw;
+        margin-bottom: 3vh;
+        text-align: justify;
     }
-
-
-
                 #ourdogs{
-                    background-color: aqua;
-                    display: flex;
+                    /* background-color: #CDB699; */
+                    display: inline-flex;
                     justify-content: center;
                     align-items: center;
                 }
                 #ourdog1{
-                    /* flex-wrap: wrap; */
+                    margin-right: 3vw;
+                }
+                #ourdog2{
+                    margin-left: 3vw;
                 }
                 .dogsdes{
-                    padding: 0px;
-                    margin-left: 25vw;
-                    height: 150px;
+
+                    height: 14vh;
+                    width: 35vw;
+                    display: flex;
+                    margin-bottom: 2vh;
+                    justify-content: flex-start;
+                    float: left;
                 }
                 .dogsimg img{
+                    height: 14vh;
                     width: 10vw;
-                    height: 15vh;
-                    display: inline-block;
-                    float: left;
                     border-radius: 10%;
-
+                    margin-right: 2vw;
                 }
-                .dogsdes img:hover{
+                .dogstxt{
+                    align-self: center;
+                    max-width: fit-content;
+                    font-size: 16px;
+                    text-align: justify;
+                    justify-content: center;
+                }
+                .dogsdes:hover{
                     transform: scale(1.1);
                 }
 
-                .dogstxt{
-                    height: 150px;
-                    width: 750px;
-                    padding: 18px;
-                    font-size: 20px;
-                    text-align: justify;
-                    display: inline-block;
-                }
 
 
 #support{
-    background-color: yellow;
+    /* background-color: #ca9f6b; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#support1{
-    text-align: center;
-    max-width: 45vw;
-}
 
-#newsletter{
-text-align: center;
-background-color: cyan;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-#newsletter1{
-}
-#email{
-    width: 350px;
-    height: 30px;
-    border: solid;
-}
-#button{
-    width: 90px;
-    height: 35px;
+    #newsletter{
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    border: solid;
-}
+    /* background-color: #CDB699; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    input{
+        width: 350px;
+        height: 30px;
+        background: none;
+        opacity: 1;
+        border: none;
+        border-bottom: solid 2px hsl(0, 0%, 0%);
+    }
+    /* input::placeholder{
+        font-size: 10px;
+    } */
+
+    #demo{
+        width: 90px;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(211, 168, 28);
+        border: solid;
+    }
+    #demo:active{
+        scale: 1.1;
+    }
 
 
 
     #contact{
-        background-color: red;
+        /* background-color: #CDB699; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -176,8 +192,7 @@ justify-content: center;
     }
     .socmedia{
         display: inline-block;
-        margin-left:auto;
-        margin-right:auto;
+        align-items: center;
     }
     .socimg{
         width: 150px;
