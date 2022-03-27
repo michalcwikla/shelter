@@ -1,13 +1,13 @@
-// const demo = document.getElementById("demo");
+// const demo1 = document.getElementById('hide');
 
+// demo1.onclick = () => {
+//   demo1.textContent = 'Help Me!';
+//   demo1.style.color = 'red';
+//   console.log("DZIAŁA");
+// }
+// console.log("działa");
 
-// document.getElementById('demo').onclick = function changeContent() {
-
-//     document.getElementById('demo').textContent = "Help me";
-//     document.getElementById('demo').style = "Color: red";
-//  }
-
- const a = 6;
- string b = "3";
- let c = a+b;
- console.log(c);
+document.querySelector(hide).onclick{
+    document.querySelector("hide").style.cssText = "green";
+}
+console.log("Help me!");
