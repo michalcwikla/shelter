@@ -1,13 +1,8 @@
-// const demo1 = document.getElementById('hide');
+const buttonColor = document.querySelector('hide');
+console.log("marcin")
 
-// demo1.onclick = () => {
-//   demo1.textContent = 'Help Me!';
-//   demo1.style.color = 'red';
-//   console.log("DZIAŁA");
-// }
-// console.log("działa");
+naKlikniecie = () => {
+    document.querySelector.onclick(buttonColor);
+    
 
-document.querySelector(hide).onclick{
-    document.querySelector("hide").style.cssText = "green";
 }
-console.log("Help me!");
