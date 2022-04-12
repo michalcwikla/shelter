@@ -163,11 +163,14 @@ border-bottom: solid 2px hsl(0, 0%, 0%);
         width: 90px;
         height: 35px;
         text-align: center;
-        background-color: rgb(211, 168, 28);
+        background-color: rgb(143, 143, 48);
         border: solid;
     }
     #hide:active{
         scale: 1.1;
+        animation-name: gooout;
+
+        animation-fill-mode: both;
     }
 
     #contact{

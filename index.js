@@ -1,8 +1,7 @@
-const buttonColor = document.querySelector('hide');
+// // const buttonColor = document.querySelector('hide');
 console.log("marcin")
 
 naKlikniecie = () => {
-    document.querySelector.onclick(buttonColor);
-    
-
+    // document.getElementById('hide').style.background="green";
+    console.log("marcin1");
 }
