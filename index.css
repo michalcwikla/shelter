@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    background-color: #CDB699;
+    background-color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
 }
@@ -43,7 +43,7 @@ opacity: 1;
 display: flex;
 position: fixed;
 opacity: 1;
-justify-content: center;
+justify-content: left;
 visibility: visible;
 /* align-items: center; */
 z-index: 1000;
@@ -53,14 +53,14 @@ padding-inline-start: 0%;
 font-size: 12px;
 color: black;
 text-transform: uppercase;
-background-color:  #b4b08a;
+background-color:  #ffffff;
 list-style-type: none;
 opacity: 1;
 display:inline-block;
 padding: 12px;
 }
 .menu > li:hover{
-background-color:  #b4b08a;
+background-color:  #078631;
 opacity: 0,9;
 transform: scale(1.1);
 }
@@ -68,7 +68,16 @@ transform: scale(1.1);
 text-decoration: none;
 color: black;
 }
+#mainlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#login{
+    display: flex;
+    float: right;
+}
 
 #main{
 display: flex;
@@ -127,6 +136,7 @@ margin-right: 2vw;
 .dogstxt{
 align-self: center;
 max-width: fit-content;
+max-height: fit-content;
 font-size: 16px;
 text-align: justify;
 justify-content: center;
