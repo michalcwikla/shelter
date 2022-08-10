@@ -1,2 +1,2 @@
-# przytulpsiaka
+# Hug a puppy!
 Schronisko
