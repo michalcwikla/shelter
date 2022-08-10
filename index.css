@@ -59,7 +59,7 @@ color: black;
 background-color:  #ffffff;
 list-style-type: none;
 display:inline-block;
-padding: 8px;
+padding: 9px;
 }
 .menu > li:hover{
 background-color:  #078631;
