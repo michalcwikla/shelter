@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    background-color: white;
+    /* background-color: white; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
@@ -43,7 +43,7 @@ section{
     z-index: 1000;
     font-size: 0.9em;
     letter-spacing: 2px;
-    background-color: darkgreen;
+    background-color: #f6eee0;
     margin-top: 0%;
 }
 .menu{
@@ -64,7 +64,7 @@ section{
     padding: 7px;
 }
 .menu > li:hover{
-    background-color:  #078631;
+    background-color:  #fcf599c7;
     opacity: 0,9;
     transform: scale(1.1);
 }
@@ -100,7 +100,7 @@ section{
 
 
 #login1:hover{
-    background-color:  #078631;
+    background-color:  #fcf599c7;
     opacity: 0,9;
     text-decoration: none;
     color: black;
@@ -126,19 +126,34 @@ section{
 
 #main{
 display: flex;
+flex-direction: column;
 align-items:center;
 justify-content: center;
+background-color: #f6eee0;
+width: 100vw;
+/* justify-content: space-around; */
 }
-.description{
-width: 75vw;
+#description{
+/* width: 50vw; */
 text-align: justify;
 animation-name: appear;
 animation-duration: 2s;
 animation-delay: 0.5s;
 animation-fill-mode: both;
+padding: 100px;
 }
-.opis::first-letter{
-font-size: 1.3em;
+/* .description::first-letter{
+font-size: 1.5em;
+} */
+
+#photomain{
+    display: flex;
+    justify-content:space-around;
+    width: 80vw;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 }
 
 #us{
@@ -146,6 +161,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-color: #e4b7a0;
 }
 #description2{
 width: 75vw;
@@ -153,7 +169,7 @@ margin-bottom: 3vh;
 text-align: justify;
 }
 #ourdogs{
-/* background-color: #CDB699; */
+background-color: #a45c40;
 display: inline-flex;
 justify-content: center;
 align-items: center;
@@ -191,14 +207,14 @@ transform: scale(1.1);
 }
 
 #support{
-    /* background-color: #ca9f6b; */
+    background-color: #a45c40;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #newsletter{
     text-align: center;
-    /* background-color: #CDB699; */
+    background-color: #c38370;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +246,7 @@ border-bottom: solid 2px hsl(0, 0%, 0%);
     }
 
     #contact{
-        /* background-color: #CDB699; */
+        background-color: #CDB699;
         display: flex;
         justify-content: center;
         align-items: center;
