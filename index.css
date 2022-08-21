@@ -40,7 +40,7 @@ section{
     width: 100vw;
     align-items: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     font-size: 0.9em;
     letter-spacing: 2px;
     background-color: #f6eee0;
@@ -107,31 +107,55 @@ section{
     transform: scale(1.1);
 
 }
+/* BUGER MENU */
+        .burger{
+            display: none;
+        }
+        .burger div{
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 4px;
+        }
 
-.burger{
-    display: none;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 4px;
-}
-
-/* @media screen and (max-width: 768px){
-    body{
-        display: none;
-    }
-} */
+        @media screen and (max-width: 1500px){
+            #login{
+                width: 25vw;
+            }
+            .menu{
+                width: 75vw;
+            }
+            #mainlogo{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 875px){
+            body{
+                /* overflow-x: hidden; */
+            }
+            .menu{
+                position: absolute;
+                left: 0px;
+                margin-left: 0px;
+                height: 97vh;
+                top: 3vh;
+                width: 40vw;
+                background-color: #f6eee0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* transform: translateX(-100%); */
+            }
+        }
 
 #main{
+font-size: 1em;
 display: flex;
 flex-direction: column;
 align-items:center;
 justify-content: center;
 background-color: #f6eee0;
 width: 100vw;
-/* justify-content: space-around; */
 }
 #description{
 /* width: 50vw; */
@@ -142,9 +166,9 @@ animation-delay: 0.5s;
 animation-fill-mode: both;
 padding: 100px;
 }
-/* .description::first-letter{
-font-size: 1.5em;
-} */
+.description::first-letter{
+font-size: 1.2em;
+}
 
 #photomain{
     display: flex;
