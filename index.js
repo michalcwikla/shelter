@@ -1,15 +1,10 @@
-// // // const buttonColor = document.querySelector('hide');
-// console.log("marcin")
+const menuSlide () => {
+    const burger = document.querySelector(".burger");
+    const menu = document.querySelector(".menu");
 
-// naKlikniecie = () => {
-//     document.getElementById('hide').style.background="green";
-//     console.log("marcin1");
-// }
-// const buttonColor = document.querySelector('hide');
-// console.log("marcin")
+    burger.addEventListener("click", ()=> {
+        menu.classList.toggle(".menu-active");
+    });
+}
 
-// naKlikniecie = () => {
-//     document.querySelector.onclick(buttonColor);
-    
-
-// }
+menuSlide();

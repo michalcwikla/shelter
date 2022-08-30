@@ -113,7 +113,7 @@ section{
         }
         .burger div{
             width: 25px;
-            height: 3px;
+            height: 2px;
             background-color: black;
             margin: 4px;
         }
@@ -131,7 +131,7 @@ section{
         }
         @media screen and (max-width: 875px){
             body{
-                /* overflow-x: hidden; */
+                overflow-x: hidden;
             }
             .menu{
                 position: absolute;
@@ -140,13 +140,27 @@ section{
                 height: 97vh;
                 top: 3vh;
                 width: 40vw;
-                background-color: #f6eee0;
+                background-color: #eb0f0f;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                /* transform: translateX(-100%); */
+                transform: translateX(-100%);
+                /* transition: transform 1s ease-in; */
+            }
+            .burger{
+                display: block;
+            }
+            #photomain3, #photomain1{
+                display: none;
             }
         }
+            .burger:hover{
+                cursor: pointer;
+                opacity: 0.5;
+            }
+            .menu-active{
+            transform: translateX(200%);
+            }
 
 #main{
 font-size: 1em;
