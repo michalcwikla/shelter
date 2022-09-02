@@ -17,6 +17,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -129,9 +130,18 @@ section{
                 display: none;
             }
         }
+
+        
         @media screen and (max-width: 875px){
             body{
-                overflow-x: hidden;
+                /* overflow-x: hidden; */
+                /* margin-bottom: 6vh; */
+            }
+            .header{
+                justify-content: space-between;
+            }
+            #login{
+                margin-right: 2vw;
             }
             .menu{
                 position: absolute;
@@ -148,19 +158,20 @@ section{
                 /* transition: transform 1s ease-in; */
             }
             .burger{
-                display: block;
+                display:block;
+                margin-left: 2vw;
             }
             #photomain3, #photomain1{
                 display: none;
             }
         }
-            .burger:hover{
-                cursor: pointer;
-                opacity: 0.5;
-            }
-            .menu-active{
-            transform: translateX(200%);
-            }
+        .burger:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .menu-active{
+        transform: translateX(+100%);
+        }
 
 #main{
 font-size: 1em;

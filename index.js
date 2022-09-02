@@ -1,10 +1,13 @@
-const menuSlide () => {
-    const burger = document.querySelector(".burger");
-    const menu = document.querySelector(".menu");
+const menuSlide = () => {
+    console.log("dzialam")
 
-    burger.addEventListener("click", ()=> {
-        menu.classList.toggle(".menu-active");
+    const burger = document.getElementById(".burger");
+    const menu1 = document.getElementById(".menu");
+
+    burger.addEventListener("click",() => {
+        menu1.classList.toggle(".menu-active");
     });
+
 }
 
 menuSlide();
