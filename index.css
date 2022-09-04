@@ -39,6 +39,7 @@ section{
     display: flex;
     justify-content: space-around;
     width: 100vw;
+    height: 5vh;
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -109,15 +110,15 @@ section{
 
 }
 /* BUGER MENU */
-        .burger{
-            display: none;
-        }
-        .burger div{
-            width: 25px;
-            height: 2px;
-            background-color: black;
-            margin: 4px;
-        }
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 4px;
+}
 
         @media screen and (max-width: 1500px){
             #login{
@@ -129,49 +130,58 @@ section{
             #mainlogo{
                 display: none;
             }
-        }
-
-        
-        @media screen and (max-width: 875px){
-            body{
-                /* overflow-x: hidden; */
-                /* margin-bottom: 6vh; */
-            }
-            .header{
-                justify-content: space-between;
-            }
-            #login{
-                margin-right: 2vw;
-            }
-            .menu{
-                position: absolute;
-                left: 0px;
-                margin-left: 0px;
-                height: 97vh;
-                top: 3vh;
-                width: 40vw;
-                background-color: #eb0f0f;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                transform: translateX(-100%);
-                /* transition: transform 1s ease-in; */
-            }
-            .burger{
-                display:block;
-                margin-left: 2vw;
-            }
-            #photomain3, #photomain1{
+            .ourdogsside1{
                 display: none;
             }
         }
-        .burger:hover{
-            cursor: pointer;
-            opacity: 0.5;
-        }
-        .menu-active{
-        transform: translateX(+100%);
-        }
+                @media screen and (max-width: 875px){
+                    body{
+                        /* overflow-x: hidden; */
+                        /* margin-bottom: 6vh; */
+                    }
+                    .header{
+                        justify-content: space-between;
+                    }
+                    #login{
+                        margin-right: 2vw;
+                    }
+                    .menu{
+                        position: absolute;
+                        left: 0px;
+                        margin-left: 0px;
+                        height: 97vh;
+                        top: 5vh;
+                        width: 40vw;
+                        padding: 4px;
+                        background-color: #f6eee0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        transform: translateX(-100%);
+                    }
+                    .burger{
+                    display:block;
+                    margin-left: 2vw;
+                    }
+                    #photomain3, #photomain1{
+                    display: none;
+                    }
+                    .burger:hover{
+                    cursor: pointer;
+                    opacity: 0.5;
+                    }
+                    #image{
+                        display: none;
+                    }
+
+                }
+
+.menu-active{
+    transform: translateX(0%);
+    transition: transform 1s ease-out;
+    width: fit-content;
+    height: fit-content;
+}
 
 #main{
 font-size: 1em;
@@ -217,43 +227,47 @@ width: 75vw;
 margin-bottom: 3vh;
 text-align: justify;
 }
+
+/* OBRAZKI Z PSAMI */
+#ourDogsPresent{
+    text-align: center;
+}
 #ourdogs{
-background-color: #a45c40;
-display: inline-flex;
+background-color: #d89174;
+display: flex;
 justify-content: center;
-align-items: center;
 }
-#ourdog1{
-margin-right: 3vw;
-}
-#ourdog2{
-margin-left: 3vw;
+.ourdogsside, .ourdogsside1{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+
 }
 .dogsdes{
-height: 14vh;
-width: 35vw;
-display: flex;
-margin-bottom: 2vh;
-justify-content: flex-start;
-float: left;
+    height: 200px;
+    width: 200px;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
 }
 .dogsimg img{
-height: 14vh;
-width: 10vw;
-border-radius: 10%;
-margin-right: 2vw;
+    border-radius: 30%;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
 }
-.dogstxt{
-align-self: center;
-max-width: fit-content;
-max-height: fit-content;
-font-size: 16px;
-text-align: justify;
-justify-content: center;
+.dogsdes img:hover{
+transform: scale(1.05);
 }
-.dogsdes:hover{
-transform: scale(1.1);
+.dogsName{
+    background-color: white;
+    text-align: center;
+    border-radius: 8%;
+
 }
+
+/* YOUR SUPPORT */
 
 #support{
     background-color: #a45c40;
