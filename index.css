@@ -27,6 +27,8 @@ body{
     /* background-color: white; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
+    letter-spacing: 2px;
+
 }
 section{
     width: 100%;
@@ -66,7 +68,7 @@ section{
     padding: 7px;
 }
 .menu > li:hover{
-    background-color:  #fcf599c7;
+    /* background-color:  #fcf599c7; */
     opacity: 0,9;
     transform: scale(1.1);
 }
@@ -102,7 +104,7 @@ section{
 
 
 #login1:hover{
-    background-color:  #fcf599c7;
+    /* background-color:  #fcf599c7; */
     opacity: 0,9;
     text-decoration: none;
     color: black;
@@ -213,8 +215,12 @@ font-size: 1.2em;
     animation-duration: 2s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
+    align-items: center;
 }
-
+#photomain0, #photomain1, #photomain2, #photomain3{
+    border-radius: 10px 100px / 120px;
+    overflow: hidden;
+}
 #us{
 display: flex;
 flex-direction: column;
@@ -229,21 +235,36 @@ text-align: justify;
 }
 
 /* OBRAZKI Z PSAMI */
-#ourDogsPresent{
-    text-align: center;
+.ourDogsSide0{
+    display: flex;
+    justify-content: center;
 }
 #ourdogs{
-background-color: #d89174;
-display: flex;
-justify-content: center;
+    background-color: #d89174;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+#ourDogsPresent{
+    text-align: center;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ourdogsside, .ourdogsside1{
-    height: 100vh;
+    height: 95vh;
     width: 20vw;
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
+
+@media screen and (max-width: 1200px){
+    .ourdogsside{
+        display: none;
+    }
+}
+
 .dogsdes{
     height: 200px;
     width: 200px;
