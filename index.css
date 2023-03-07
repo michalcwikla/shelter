@@ -135,6 +135,9 @@ section{
             .ourdogsside1{
                 display: none;
             }
+            #photomain0{
+                display: none;
+            }
         }
                 @media screen and (max-width: 875px){
                     body{
@@ -180,9 +183,12 @@ section{
 
 .menu-active{
     transform: translateX(0%);
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease-out;
     width: fit-content;
     height: fit-content;
+    border-bottom-right-radius: 10%;
+    font-size: 1em;
+    background-color: lightcoral;
 }
 
 #main{
@@ -211,12 +217,36 @@ font-size: 1.2em;
     display: flex;
     justify-content:space-around;
     width: 80vw;
+    align-items: center;
+}
+#photomain0{
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+#photomain1{
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+#photomain2{
     animation-name: appear;
     animation-duration: 2s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
-    align-items: center;
 }
+#photomain3{
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+
+
+
 #photomain0, #photomain1, #photomain2, #photomain3{
     border-radius: 10px 100px / 120px;
     overflow: hidden;
@@ -245,6 +275,7 @@ text-align: justify;
     /* justify-content: center; */
 }
 #ourDogsPresent{
+    
     text-align: center;
     height: 5vh;
     display: flex;
